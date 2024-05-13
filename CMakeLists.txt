@@ -1,10 +1,17 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 project(calculator C)
-add_subdirectory(include)
-add_subdirectory(src)
+
+set(CMAKE_C_STANDARD 11)
+
 include_directories(include)
+
+add_library(calculator src/lib/calculator.c)
+
+add_executable(main src/main.c)
+target_link_libraries(main calculator)
+
 enable_testing()
-add_test(t1 src/calculator add 2 3)
-add_test(t2 src/calculator sub 3 -2)
-add_test(t3 src/calculator mul 5 5)
-add_test(t4 src/calculator div 1 5)
+
+add_executable(tests tests/tests.c)
+target_link_libraries(tests calculator)
+add_test(NAME test_calculator COMMAND tests)
