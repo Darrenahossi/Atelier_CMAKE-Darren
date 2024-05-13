@@ -14,7 +14,7 @@ int multiply(int a, int b) {
 
 float divide(int a, int b) {
     if (b == 0) {
-        return 0; // Division par zéro, retourne 0
+        return 0; // Division by zero, return 0
     }
     return (float)a / (float)b;
 }
@@ -22,4 +22,5 @@ float divide(int a, int b) {
 int square(int a) {
     return a * a;
 }
+
 	
