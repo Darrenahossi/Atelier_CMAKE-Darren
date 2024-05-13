@@ -14,7 +14,7 @@ double _sub(double a, double b) {
 }
 
 double _mul(double a, double b) {
-    return ab;
+    return a*b;
 }
 
 double _div(double a, double b) {
@@ -22,7 +22,7 @@ double _div(double a, double b) {
 }
 
 double square(double x) {
-    return x x;
+    return x*x;
 }
 
 	
