@@ -1,26 +1,28 @@
-#include "calculator.h"
+double _add(double a, double b);
+double _sub(double a, double b);
+double _mul(double a, double b);
+double _div(double a, double b);
+double square(double x);
+#include "./../../include/calculator.h"
 
-int add(int a, int b) {
-    return a + b;
+double _add(double a, double b) {
+    return a+b;
 }
 
-int subtract(int a, int b) {
-    return a - b;
+double _sub(double a, double b) {
+    return a-b;
 }
 
-int multiply(int a, int b) {
-    return a * b;
+double _mul(double a, double b) {
+    return ab;
 }
 
-float divide(int a, int b) {
-    if (b == 0) {
-        return 0; // Division by zero, return 0
-    }
-    return (float)a / (float)b;
+double _div(double a, double b) {
+    return a/b;
 }
 
-int square(int a) {
-    return a * a;
+double square(double x) {
+    return x x;
 }
 
 	
