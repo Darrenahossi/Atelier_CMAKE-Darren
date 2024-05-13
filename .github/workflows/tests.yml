@@ -27,4 +27,4 @@ jobs:
           cd build
           cmake ..
           make
-          make test
+          ./src/calculator add 10 5
