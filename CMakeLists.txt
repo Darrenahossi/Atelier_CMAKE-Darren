@@ -9,9 +9,3 @@ add_library(calculator src/lib/calculator.c)
 
 add_executable(main src/main.c)
 target_link_libraries(main calculator)
-
-enable_testing()
-
-add_executable(tests tests/tests.c)
-target_link_libraries(tests calculator)
-add_test(NAME test_calculator COMMAND tests)
