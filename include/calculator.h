@@ -1,5 +1,10 @@
-double _add(double a, double b);
-double _sub(double a, double b);
-double _mul(double a, double b);
-double _div(double a, double b);
-double square(double x);
+#ifndef CALCULATOR_H
+#define CALCULATOR_H
+
+int add(int a, int b);
+int subtract(int a, int b);
+int multiply(int a, int b);
+int divide(int a, int b);
+int square(int a);
+
+#endif /* CALCULATOR_H */
